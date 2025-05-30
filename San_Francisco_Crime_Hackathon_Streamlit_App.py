@@ -8,7 +8,6 @@ df = joblib.load("joblib/df.joblib")
 feature_importances_df = joblib.load("joblib/feature_importances_df.joblib")
 y_test = joblib.load("joblib/y_test.joblib")
 y_test_pred_reduced = joblib.load("joblib/y_test_pred_reduced.joblib")
-reduced_pipeline = joblib.load("joblib/reduced_pipeline.joblib")
 
 st.title("San Francisco Crime Classification Project")
 
