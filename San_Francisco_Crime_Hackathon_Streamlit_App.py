@@ -3,12 +3,12 @@ import joblib
 import numpy as np
 from sklearn.metrics import classification_report, accuracy_score
 
-# Load all referenced variables from disk
-df = joblib.load("df.joblib")
-feature_importances_df = joblib.load("feature_importances_df.joblib")
-y_test = joblib.load("y_test.joblib")
-y_test_pred_reduced = joblib.load("y_test_pred_reduced.joblib")
-reduced_pipeline = joblib.load("reduced_pipeline.joblib")
+# Load all referenced variables from disk (from 'joblib' subfolder)
+df = joblib.load("joblib/df.joblib")
+feature_importances_df = joblib.load("joblib/feature_importances_df.joblib")
+y_test = joblib.load("joblib/y_test.joblib")
+y_test_pred_reduced = joblib.load("joblib/y_test_pred_reduced.joblib")
+reduced_pipeline = joblib.load("joblib/reduced_pipeline.joblib")
 
 st.title("San Francisco Crime Classification Project")
 
