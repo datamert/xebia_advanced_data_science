@@ -51,5 +51,3 @@ st.bar_chart(feature_importances_df.set_index('feature').head(5)['importance'])
 
 st.subheader("Classification Report (Test Set)")
 st.text(classification_report(y_test, y_test_pred_reduced))
-
-st.info("For full interactivity, run this notebook as a Streamlit app using `streamlit run`.")
