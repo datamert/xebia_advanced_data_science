@@ -53,16 +53,4 @@ st.bar_chart(feature_importances_df.set_index('feature').head(5)['importance'])
 st.subheader("Classification Report (Test Set)")
 st.text(classification_report(y_test, y_test_pred_reduced))
 
-st.subheader("Try Out a Prediction")
-with st.expander("Manual Input (for demo only)"):
-    # Example: let user input values for the top 5 features
-    input_dict = {}
-    for feat in feature_importances_df['feature'].head(5):
-        input_dict[feat] = st.number_input(f"Input value for {feat}", value=0.0)
-    if st.button("Predict Theft?"):
-        X_input = np.array([list(input_dict.values())]).reshape(1, -1)
-        # Use only the model part of the reduced pipeline for demo
-        pred = reduced_pipeline['model'].predict(X_input)
-        st.write("Prediction:", "Theft" if pred[0] == 1 else "Not Theft")
-
 st.info("For full interactivity, run this notebook as a Streamlit app using `streamlit run`.")
