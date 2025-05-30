@@ -1,1 +1,1 @@
-This is a repository for the Hackathon projects that I completed during and after the 2-day training "Advanced Data Science with Pyton" given by Xebia on 19-20 May 2025.
+This is a repository for the Hackathon projects that I completed during and after the 2-day training "Advanced Data Science with Python" given by Xebia on 19-20 May 2025. It contains the main notebook where I develop the prediction model, as well as files needed for my first attempt of publishing a Strealit app.
